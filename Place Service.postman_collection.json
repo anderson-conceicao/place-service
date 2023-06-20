@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "b20d4640-e98d-4923-996b-12cc7e332139",
+		"name": "Place Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10048437"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Copacabana\",\r\n    \"city\": \"Rio de Janeiro\",\r\n    \"state\": \"RJ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/places",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"places"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/places/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"places",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/places/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"places",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Senador Camará\",\r\n    \"city\": \"Rio de Janeiro\",\r\n    \"state\": \"RJ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/places/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"places",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/places",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"places"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
